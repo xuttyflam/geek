@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  min-height: 100vh;
+  max-width: 100vw;
+  line-height: 1.4;
+  padding: 20px 40px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto; /* Centering the container horizontally */
+}
+
+.heading-1 {
+  font-size: 40px;
+  text-transform: uppercase;
+  text-align: center; /* Center the text */
+}
+
+.heading-2 {
+  font-size: 40px;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.heading-2:hover {
+  color: #0056b3;
+
+}
+
+
+.heading-3 {
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #b30009;
+  margin-bottom: 10px;
+}
+
+.heading-5 {
+  font-size: 40px;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+.sub-heading {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+.sub-heading p {
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-right: 10px;
+}
+
+.sub-heading span {
+  color: #555;
+  font-weight: 300;
+  border-right: 1px solid #ccc;
+  padding-right: 10px;
+}
+
+.sub-heading .importent {
+  color: crimson;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+/* HOME */
+.home {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 40px;
+}
+
+.home-img {
+  width: 100%;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.list img {
+  width: 100%;
+  height: 80px;
+}
+
+ARTICLE 
+article > p {
+  font-size: 20px;
+  margin-bottom: 30px;
+
+  columns: 3 25ch;
+  column-gap: 40px;
+  hyphens: auto;
+}
+
+
+
+.news-container .heading{
+    font-size: 200%;
+    margin-bottom: 20px;
+}
+
+.news-container .news{    
+    text-align: justify;
+    column-gap: 50px;
+    column-rule: 3px solid #ccc;
+}
+
+.news-container .news img {
+    width:100%;
+}
+
+.news.col-2 {
+    column-count: 2;
+}
+
+.news.col-3 {
+    column-count: 3;
+}
+
+.news.col-4 {
+  column-count: 3;
+  margin-top: 40px;
+}
+.cards-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow cards to wrap to the next "row" */
+  justify-content: center;
+}
+
+.cards {
+  columns: 25ch 3;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+.card {
+  font-size: 20px;
+  border: 1px solid;
+  padding: 10px 20px;
+  break-inside: avoid;
+}
+
+.my-class {
+  margin-bottom: 20px; /* Adjusted margin to create a space of 20px between text and button */
+}
+
+.card-button1,
+.card-button2 {
+  margin-top: 20px; /* Adjusted margin to create a space of 20px between text and button */
+  padding: 8px 12px;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  width: fit-content;
+  text-decoration: none;
+}
+
+
+
+.card-button1:hover,
+.card-button2:hover {
+  background-color: #b30009;
+}
+
+.my-photo {
+  max-width: 50%;
+  height: auto; /* This ensures the aspect ratio of the image is maintained */
+}
+
+a {
+  text-decoration: none;
+  color: #000000; /* Remove underline from the link */
+}
+
+a:hover p {
+  text-decoration: none;
+  color: #b30009; /* Optional: add an underline on hover */
+}
+
+.Gaza {
+  width: 50px;
+}
+
+
+@media (max-width: 950px) {
+  .home {
+    grid-template-columns: 1fr;
+  }
+
+  .lists {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .list {
+    grid-template-columns: 1fr 5fr;
+  }
+
+  .card {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 650px) {
+  .lists {
+    grid-template-columns: 1fr;
+  }
+}
